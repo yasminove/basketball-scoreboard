@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Cursed Timer ULiL;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+body {
+    background-color: #1B244A;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 9.25em 5.37em 4.31em 5.31em;
+} 
+
+.team {
+    font-family: Verdana;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.18rem;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+.screen {
+    width: 9.6rem;
+    height: 7.5rem;
+    top: 7.8rem;
+    left: 5.1rem;
+    border-radius: 0.3rem;
+    background:#080001;
+    color: #F94F6D;
+    font-family: Cursed Timer ULiL;
+    font-size: 5.6rem;
+    font-weight: 400;
+    line-height: 7.9rem;
+    text-align: center;
+}
+
+.add-points-btns {
+    margin-top: 1.6rem;
+    display: flex;
+    gap: 0.6rem;
+}
+
+.add-points-btn {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 0.3rem;
+    background: none;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    font-family: Cursed Timer ULiL;
+}
+
+@media (max-width: 360px) {
+
+    .team {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 0.18rem;
+    }
+
+    .screen {
+        width: 5.6rem;
+        height: 5.6rem;
+        font-size: 2.6rem;
+        line-height: 5.9rem;
+    }
+
+    .add-points-btns {
+        margin-top: 0.7rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .add-points-btn {
+        width: 1.6rem;
+        height: 1.6rem;
+        font-size: 0.5rem;
+    }
+
+    .home-container {
+        margin-right: 1.5rem;
+    }
+
+    .guest-container {
+        margin-left: 1.5rem;
+    }
+    
+}
+
+@media (max-width: 375px) {
+
+    .team {
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 0.18rem;
+    }
+
+    .screen {
+        width: 5.6rem;
+        height: 5.6rem;
+        font-size: 2.6rem;
+        line-height: 5.9rem;
+    }
+
+    .add-points-btns {
+        margin-top: 0.7rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .add-points-btns {
+        margin-top: 0.7rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .add-points-btn {
+        width: 1.6rem;
+        height: 1.6rem;
+        font-size: 0.5rem;
+    }
+
+    .home-container {
+        margin-right: 1.5rem;
+    }
+
+    .guest-container {
+        margin-left: 1.5rem;
+    }
+
+}
+
+@media  (max-width: 414px) {
+
+    .team {
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 0.18rem;
+    }
+
+    .screen {
+        width: 5.6rem;
+        height: 5.6rem;
+        font-size: 2.6rem;
+        line-height: 5.9rem;
+    }
+
+    .add-points-btns {
+        margin-top: 0.7rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .add-points-btn {
+        width: 1.6rem;
+        height: 1.6rem;
+        font-size: 0.5rem;
+    }
+
+    .home-container {
+        margin-right: 1.5rem;
+    }
+
+    .guest-container {
+        margin-left: 1.5rem;
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .team {
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 0.18rem;
+    }
+
+    .screen {
+        width: 5.6rem;
+        height: 5.6rem;
+        font-size: 2.6rem;
+        line-height: 5.9rem;
+    }
+
+    .add-points-btns {
+        margin-top: 0.7rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .add-points-btn {
+        width: 1.6rem;
+        height: 1.6rem;
+        font-size: 0.5rem;
+    }
+
+    /* .home-container {
+        margin-right: 1.5rem;
+    }
+
+    .guest-container {
+        margin-left: 1.5rem;
+    } */
+}
+
+@media (max-width: 280px) {
+
+    .team {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 0.18rem;
+    }
+
+    .screen {
+        width: 5.2rem;
+        height: 5.2rem;
+        font-size: 2.3rem;
+        line-height: 5.7rem;
+    }
+
+    .add-points-btns {
+        margin-top: 0.7rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .add-points-btn {
+        width: 1.4rem;
+        height: 1.4rem;
+        font-size: 0.4rem;
+    }
+}
