@@ -135,7 +135,7 @@ body {
 }
 
 @media  (max-width: 414px) {
-
+   
     .team {
         font-size: 1.3rem;
         font-weight: 600;
@@ -171,7 +171,26 @@ body {
 
 }
 
-@media (max-width: 540px) {
+@media only screen and (max-width: 432px) {
+    .team {
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 0.18rem;
+    }
+
+    .home-container {
+        margin-right: 1.5rem;
+    }
+
+    .guest-container {
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 540px) and (min-width: 433px){
+    body {
+        background-color: chocolate;
+    }
 
     .team {
         font-size: 1.3rem;
