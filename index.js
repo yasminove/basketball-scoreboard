@@ -1,41 +1,57 @@
 let homeScreen = document.getElementById('home-screen');
 let guestScreen = document.getElementById('guest-screen');
 
-let homeScore = Number(homeScreen.textContent) 
-let guestScore = Number(guestScreen.textContent);
+var homeScore = 0;
+var guestScore = 0;
 
 function addOnePointToHome() {
-    let currentScore = Number(homeScreen.textContent)
-    currentScore += 1
-    homeScreen.textContent = currentScore
+    homeScore += 1
+    console.log(homeScore, 'homeScore addOnePointToHome');
+    homeScreen.textContent = homeScore
+    checkWhoIsLeading()
 }
 
 function addTwoPointsToHome() {
-    let currentScore = Number(homeScreen.textContent)
-    currentScore += 2
-    homeScreen.textContent = currentScore
+    homeScore+= 2
+    homeScreen.textContent = homeScore;
+    checkWhoIsLeading()
 }
 
 function addThreePointsToHome() {
-    let currentScore = Number(homeScreen.textContent)
-    currentScore += 3
-    homeScreen.textContent = currentScore
+    
+    homeScore += 3
+    homeScreen.textContent = homeScore
+    checkWhoIsLeading()
 }
 
 function addOnePointToGuest() {
-    let currentScore = Number(guestScreen.textContent);
-    currentScore += 1
-    guestScreen.textContent = currentScore
+    guestScore += 1
+    guestScreen.textContent = guestScore
+    checkWhoIsLeading()
 }
 
 function addTwoPointsToGuest() {
-    let currentScore = Number(guestScreen.textContent);
-    currentScore += 2
-    guestScreen.textContent = currentScore;
+    guestScore += 2
+    guestScreen.textContent = guestScore;
+    checkWhoIsLeading()
 }
 
 function addThreePointsToGuest() {
-    let currentScore = Number(guestScreen.textContent);
-    currentScore += 3;
-    guestScreen.textContent = currentScore
+    guestScore += 3;
+    guestScreen.textContent = guestScore;
+    checkWhoIsLeading()
 }
+
+function checkWhoIsLeading() {
+    if (homeScore > guestScore) {
+        homeScreen.classList.add('highlight');
+        guestScreen.classList.remove('highlight')
+    } else if (homeScore < guestScore) {
+        guestScreen.classList.add('highlight');
+        homeScreen.classList.remove('highlight')
+    } else {
+        homeScreen.classList.remove('highlight')
+        guestScreen.classList.remove('highlight')
+    }
+}
+
