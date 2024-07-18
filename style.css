@@ -6,13 +6,28 @@
 body {
     background-color: #1B244A;
     margin: 0;
+    text-align: center;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
-    margin: 9.25em 5.37em 4.31em 5.31em;
+    margin: 2.25em 5.37em 4.31em 5.31em;
 } 
+
+.timer-screen {
+    background: #080001;
+    font-family: Cursed Timer ULiL;
+    color: #F94F6D;
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: 90px auto 0px;
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: 22px;
+    border-radius: 4px;
+}
 
 .team {
     font-family: Verdana;
@@ -29,7 +44,7 @@ body {
     top: 7.8rem;
     left: 5.1rem;
     border-radius: 0.3rem;
-    background:#080001;
+    background: #080001;
     color: #F94F6D;
     font-family: Cursed Timer ULiL;
     font-size: 5.6rem;
@@ -52,94 +67,58 @@ body {
     border: 2px solid #9AABD8;
     color: #9AABD8;
     font-family: Cursed Timer ULiL;
+    cursor: pointer;
 }
 
 .highlight {
     box-shadow: 0px 0px 20px green;
 }
 
-@media (max-width: 360px) {
-
-    .team {
-        font-size: 1.5rem;
-        font-weight: 600;
-        line-height: 0.18rem;
-    }
-
-    .screen {
-        width: 5.6rem;
-        height: 5.6rem;
-        font-size: 2.6rem;
-        line-height: 5.9rem;
-    }
-
-    .add-points-btns {
-        margin-top: 0.7rem;
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    .add-points-btn {
-        width: 1.6rem;
-        height: 1.6rem;
-        font-size: 0.5rem;
-    }
-
-    .home-container {
-        margin-right: 1.5rem;
-    }
-
-    .guest-container {
-        margin-left: 1.5rem;
-    }
-    
+.new-game {
+    margin: 0 auto;
+    width: 150px;  
+    text-align: center;
+    display: inline;
+    font-family: Cursed Timer ULiL;
+    background: none;
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    padding: 8px 16px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
-@media (max-width: 375px) {
-
-    .team {
-        font-size: 1.4rem;
-        font-weight: 600;
-        line-height: 0.18rem;
+@media (max-width: 1280px) {
+    .timer-screen {
+        margin: 25px auto 0px;
+        width: 12%; 
     }
-
-    .screen {
-        width: 5.6rem;
-        height: 5.6rem;
-        font-size: 2.6rem;
-        line-height: 5.9rem;
-    }
-
-    .add-points-btns {
-        margin-top: 0.7rem;
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    .add-points-btns {
-        margin-top: 0.7rem;
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    .add-points-btn {
-        width: 1.6rem;
-        height: 1.6rem;
-        font-size: 0.5rem;
-    }
-
-    .home-container {
-        margin-right: 1.5rem;
-    }
-
-    .guest-container {
-        margin-left: 1.5rem;
-    }
-
 }
 
-@media  (max-width: 414px) {
-   
+@media (max-width: 1024px) {
+    .timer-screen {
+        width: 14%;
+        margin: 29px auto 0px;
+    }
+}
+
+@media (max-width: 912px) {
+    .timer-screen {
+        margin: 24px auto 0px;
+        width: 18%;
+        line-height: 2.5rem;
+    }
+}
+
+@media (max-width: 820px) {
+    .timer-screen {
+        width: 18%;
+        margin: 33px auto 0px;;
+    }
+}
+
+@media (max-width: 540px) and (min-width: 433px) {
     .team {
         font-size: 1.3rem;
         font-weight: 600;
@@ -164,79 +143,42 @@ body {
         height: 1.6rem;
         font-size: 0.5rem;
     }
-
-    .home-container {
-        margin-right: 1.5rem;
-    }
-
-    .guest-container {
-        margin-left: 1.5rem;
-    }
-
 }
 
-@media only screen and (max-width: 432px) {
-    .team {
-        font-size: 1.3rem;
-        font-weight: 600;
-        line-height: 0.18rem;
+@media (max-width: 540px) { 
+    .timer-screen {
+        margin: 90px auto 14px;
+        width: 18%;
+        font-size: 0.9rem;
+        height: 2.2rem;
+    }
+
+    .container {
+        margin: 2.25em 5.37em 3.31em 5.31em;
     }
 
     .home-container {
-        margin-right: 1.5rem;
+        margin-right: 5.5rem
     }
 
-    .guest-container {
-        margin-left: 1.5rem;
+    .new-game {
+        width: 20%;
+        padding: 0.3rem 0.41rem;
+        font-size: 0.8rem;
     }
 }
 
-@media (max-width: 540px) and (min-width: 433px){
-    body {
-        background-color: chocolate;
-    }
-
-    .team {
-        font-size: 1.3rem;
-        font-weight: 600;
-        line-height: 0.18rem;
-    }
-
-    .screen {
-        width: 5.6rem;
-        height: 5.6rem;
-        font-size: 2.6rem;
-        line-height: 5.9rem;
-    }
-
-    .add-points-btns {
-        margin-top: 0.7rem;
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    .add-points-btn {
-        width: 1.6rem;
-        height: 1.6rem;
-        font-size: 0.5rem;
-    }
-
-    /* .home-container {
-        margin-right: 1.5rem;
-    }
-
-    .guest-container {
-        margin-left: 1.5rem;
-    } */
-}
-
-@media (max-width: 280px) {
-
+@media (min-width: 280px) and (max-width: 539px) {
     .team {
         font-size: 1.1rem;
         font-weight: 600;
         line-height: 0.18rem;
     }
+
+    .timer-screen {
+        width: 33%;
+        font-size: 0.7rem;
+    }    
 
     .screen {
         width: 5.2rem;
@@ -255,5 +197,144 @@ body {
         width: 1.4rem;
         height: 1.4rem;
         font-size: 0.4rem;
+    }
+}
+
+@media (max-width: 432px) {
+    .team {
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 0.18rem;
+    }
+
+    .timer-screen {
+        margin: 43px auto 0px;
+        width: 17%;
+        font-size: 0.7rem;
+    }
+
+    .home-container {
+        margin-right: 1.5rem;
+    }
+
+    .guest-container {
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .team {
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 0.18rem;
+    }
+
+    .screen {
+        width: 5.6rem;
+        height: 5.6rem;
+        font-size: 2.6rem;
+        line-height: 5.9rem;
+    }
+
+    .add-points-btns {
+        margin-top: 0.7rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .add-points-btn {
+        width: 1.6rem;
+        height: 1.6rem;
+        font-size: 0.5rem;
+    }
+
+    .home-container {
+        margin-right: 4rem;
+    }
+
+    .guest-container {
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 412px) {
+    .timer-screen {
+        margin: 25px auto 0px;
+        width: 22%;
+        font-size: 0.8rem;
+    }
+
+    .home-container {
+        margin-right: 4.5rem;
+    }
+
+    .new-game {
+        width: 29%;
+        padding: 0.3rem 0.41rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .timer-screen {
+        width: 29%;
+    }
+
+    .team {
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 0.18rem;
+    }
+
+    .timer-screen {
+        width: 29%;
+    }
+
+    .screen {
+        width: 5.6rem;
+        height: 5.6rem;
+        font-size: 2.6rem;
+        line-height: 5.9rem;
+    }
+
+    .add-points-btns {
+        margin-top: 0.7rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .add-points-btns {
+        margin-top: 0.7rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .add-points-btn {
+        width: 1.6rem;
+        height: 1.6rem;
+        font-size: 0.5rem;
+    }
+
+    .home-container {
+        margin-right: 1.5rem;
+    }
+
+    .guest-container {
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .team {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 0.18rem;
+    }
+
+    .screen {
+        width: 5.6rem;
+        height: 5.6rem;
+        font-size: 2.6rem;
+        line-height: 5.9rem;
     }
 }
